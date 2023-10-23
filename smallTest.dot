@@ -1,0 +1,12 @@
+graph testCampus {
+
+medicalsciences [label="Medical Sciences" address="1215 Linden Dr."];
+psychology [label="Brogden Psychology Building" address="1202 W Johnson St."];
+servicemem [label="Service Memorial Institute" address="470 N. Charter St."];
+vanhise [label="Van Hise Hall" address="1220 Linden Dr."];
+middleton [label="Middleton Building" address="1305 Linden Dr."];
+medicalsciences -- psychology [label="N Charter St" distance=0.2];
+medicalsciences -- servicemem [label="N/A" distance=0.0];
+medicalsciences -- vanhise [label="Linden Dr" distance=0.1];
+medicalsciences -- middleton [label="Linden Dr" distance=0.08];
+}

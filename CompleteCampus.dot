@@ -1,0 +1,294 @@
+graph UWMadisonBuildingNetwork {
+// Buildings
+// Dorms
+phillips [label="Phillips Residence Hall" address="1950 Willow Dr."];
+dejope [label="Dejope Residence Hall" address="640 Elm Dr."];
+bradley [label="Bradley Residence Hall" address="650 Elm Dr."];
+sullivan [label="Sullivan Residence Hall" address="635 Elm Dr."];
+cole [label="Cole Residence Hall" address="625 Elm Dr."];
+kronshage [label="Kronshage Residence Hall" address="1650 Kronshage Dr."];
+leopold [label="Leopold Residence Hall" address="1635 Kronshage Dr."];
+jorns [label="Jorns Residence Hall" address="650 Babcock Dr."];
+humphrey [label="Humphrey Residence Hall" address="640 Babcock Dr."];
+adams [label="Adams Residence Hall" address="1520 Tripp Cir."];
+tripp [label="Tripp Residence Hall" address="1510 Tripp Cir."];
+slichter [label="Slichter Residence Hall" address="625 Babcock Dr."];
+waters [label="Waters Residence Hall" address="1200 Observatory Dr."];
+lowell [label="Lowell Center" address="610 Langdon St."];
+chadbourne [label="Chadbourne Residence Hall" address="420 N Park St."];
+barnard [label="Barnard Residence Hall" address="970 University Ave."];
+sellery [label="Sellery Residence Hall" address="821 W Johnson St."];
+witte [label="Witte Residence Hall" address="615 W Johnson St."];
+davis [label="Davis Residence Hall" address="917 W Johnson St."];
+merit [label="Merit Residence Hall" address="919 W Dayton St."];
+ogg [label="Ogg Residence Hall" address="835 W Dayton St."];
+smith [label="Smith Residence Hall" address="35 N Park St."];
+
+// Dining Halls
+fourlakes [label="Four Lakes Market" address="640 Elm Dr."];
+carson [label="Carson Gulley Center" address="1515 Tripp Cir."];
+liz [label="Liz's Market" address="1200 Observatory Dr."];
+lowellmarket [label="Lowell Market" address="610 Langdon St."];
+rheta [label="Rheta's Market" address="420 N Park St."];
+gordon [label="Gordon Avenue Market" address="770 W Dayton St."];
+
+// Academic Buildings on Bascom Hill
+helen [label="Helen C. White Hall" address="600 N Park St."];
+science [label="Science Hall" address="550 N Park St."];
+radio [label="Radio Hall" address="975 Observatory Dr."];
+education [label="Education Building" address="1000 Bascom Mall"];
+north [label="North Hall" address="1050 Bascom Mall"];
+music [label="Music Hall" address="925 Bascom Mall"];
+law [label="Law Building" address="975 Bascom Mall"];
+south [label="South Hall" address="1055 Bascom Mall"];
+birge [label="Birge Hall" address="430 Lincoln Dr."];
+vanvleck [label="Van Vleck Hall" address="480 Lincoln Dr."];
+bascom [label="Bascom Hall" address="500 Lincoln Dr."];
+sterling [label="Sterling Hall" address="475 N Charter St."];
+ingraham [label="Ingraham Hall" address="1155 Observatory Dr."];
+sewell [label="Sewell Social Sciences" address="1180 Observatory Dr."];
+
+// Academic Buildings along University Avenue (east of N Charter)
+elvehjem [label="Conrad A. Elvehjem Building" address="800 University Ave."];
+humanities [label="Mosse Humanities Building" address="455 N Park St"];
+vilas [label="Vilas Hall" address="821 University Ave."];
+grainger [label="Grainger Hall" address="975 University Ave."];
+lathrop [label="Lathrop Hall" address="1050 University Ave."];
+chemistry [label="Chemistry Building" address="1101 University Ave."];
+chamberlin [label="Chamberlin Hall" address="1150 University Ave."];
+
+// Academic Buildings around Union South
+educationalsciences [label="Educational Sciences" address="1025 W Johnson St."];
+teachereducation [label="Teacher Education Center" address="225 N Mills St."];
+noland [label="Noland Hall" address="250 N Mills St."];
+integrativebioresearch [label="Integrative Biology Research Building" address="1117 W Johnson St."];
+psychology [label="Brogden Psychology Building" address="1202 W Johnson St."];
+cs [label="Computer Sciences" address="1210 W Dayton St."];
+atmospheric [label="Atmospheric, Oceanic and Space Sciences" address="1225 W Dayton St."];
+weeks [label="Weeks Hall for Geological Sciences" address="1215 W Dayton St."];
+engineering [label="Engineering Hall" address="1415 Engineering Dr."];
+materialscience [label="Materials Science and Engineering Building" address="1509 University Ave."];
+mechanical [label="Mechanical Engineering Building" address="1513 University Ave."];
+engineeringcenters [label="Engineering Centers Building" address="1550 Engineering Dr."];
+
+// Academic Buildings on Observatory Hill
+vanhise [label="Van Hise Hall" address="1220 Linden Dr."];
+nancynicholas [label="Nancy Nicholas Hall" address="1300 Linden Dr."];
+washburn [label="Washburn Observatory" address="1401 Observatory Dr."];
+agricultural [label="Agricultural Hall" address="1450 Linden Dr."];
+hiramsmith [label="Hiram Smith Hall" address="1545 Observatory Dr."];
+microbial [label="Microbial Sciences" address="1550 Linden Dr."];
+
+// Academic Buildings around Henry Mall
+geneticsbio [label="Genetics Biotechnology" address="425 Henry Mall"]; 
+biochem [label="DeLuca Biochemistry" address="420 Henry Mall"];
+biochemscience [label="DeLuca Biochemical Sciences" address="440 Henry Mall"];
+agengineer [label="Agriculture Engineering" address="460 Henry Mall"];
+taylor [label="Taylor Hall" address="427 Lorch St."];
+nutritionsci [label="Nutritional Sciences" address="1415 Linden Dr."];
+socialwork [label="School of Social Work Building" address="1350 University Ave."];
+middleton [label="Middleton Building" address="1305 Linden Dr."];
+medicalsciences [label="Medical Sciences" address="1215 Linden Dr."];
+servicemem [label="Service Memorial Institute" address="470 N. Charter St."];
+
+// Academic Buildings on West Campus
+russelllabs [label="Russell Laboratories" address="1630 Linden Dr."];
+hansonbio [label="Hanson Biomedical Sciences" address="1656 Linden Dr."];
+animalscience [label="Animal Science" address="1675 Observatory Dr."];
+agengineerlab [label="Agricultural Engineering Laboratory" address="540 Elm Dr."];
+livestocklab [label="Livestock Laboratory" address="1810 Linden Dr."];
+dairycattle [label="Dairy Cattle Center" address="1815 Linden Dr."];
+meatandmuscle [label="Meat Science and Muscle Biology Lab" address="1805 Linden Dr."];
+poultrylab [label="Poultry Research Laboratory" address="1925 Observatory Dr."];
+meatandanimal [label="Meat Science & Animal Biologics Discovery" address="1933 Observatory Dr."];
+meatmicro [label="Meat Microbiology Lab" address="1932 Linden Dr."];
+vetmedicine [label="Veterinary Medicine" address="2015 Linden Dr."];
+biotronlab [label="Biotron Laboratory" address="2115 Observatory Dr."];
+
+// Other Important Buildings
+hamelmusic [label="Hamel Music Center" address="740 University Ave."];
+chazen [label="Chazen Museum of Art" address="750 University Ave."];
+unibookstore [label="University Book Store" address="711 State St."];
+memlibrary [label="Memorial Library" address="728 State St."];
+redgym [label="Red Gym" address="716 Langdon St."];
+memunion [label="Memorial Union" address="800 Langdon St."];
+collegelibrary [label="College Library" address="600 N Park St."];
+ecampmall333 [label="333 East Campus Mall" address="333 East Campus Mall"];
+nicreccenter [label="Nicholas Recreation Center" address="797 W Dayton St."];
+kohlcenter [label="Kohl Center" address="601 W Dayton St."];
+discovery [label="Discovery Building" address="330 N Orchard"];
+unionsouth [label="Union South" address="1308 W Dayton St."];
+camprandall [label="Camp Randall" address="1440 Monroe St."];
+bakkerec [label="Bakke Recreation and Wellness Center" address="1976 Observatory Dr."];
+colerec [label="Cole Recreation Area" address="601 Elm Dr."];
+steenbocklib [label="Steenbock Library" address="550 Babcock Dr."];
+babcockhall [label="Babcock Hall" address="1605 Linden Dr."];
+
+
+
+// Edges
+// Hunter (W of N Charter && N of U Ave)
+medicalsciences -- psychology [label="N Charter St" distance=0.2];
+medicalsciences -- servicemem [label="N/A" distance=0.0];
+medicalsciences -- vanhise [label="Linden Dr" distance=0.1];
+medicalsciences -- middleton [label="Linden Dr" distance=0.08];
+middleton -- socialwork [label="N/A" distance=0.03];
+middleton -- nutritionsci [label="N/A" distance=0.03];
+socialwork -- discovery [label="N/A" distance=0.1];
+socialwork -- geneticsbio [label="N/A" distance=0.07];
+geneticsbio -- taylor [label="N/A" distance=0.01];
+geneticsbio -- biochem [label="Henry Mall" distance=0.07];
+nutritionsci -- nancynicholas [label="Linden Dr" distance=0.04];
+nutritionsci -- agengineerlab [label="Linden Dr" distance=0.17];
+agengineerlab -- biochemscience [label="Henry Mall" distance=0.03];
+agengineerlab -- agricultural [label="Henry Mall" distance=0.06];
+biochemscience -- biochem [label="Henry Mall" distance=0.03];
+biochem -- materialscience [label="University Ave" distance=0.1];
+vanhise -- nancynicholas [label="Linden Dr" distance=0.1];
+vanhise -- waters [label="Linden Dr" distance=0.2];
+nancynicholas -- agricultural [label="N/A" distance=0.07];
+agricultural -- microbial [label="Linden Dr" distance=0.2];
+nancynicholas -- washburn [label="N/A" distance=0.13];
+washburn -- waters [label="Observatory Dr" distance=0.09];
+washburn -- hiramsmith [label="N/A" distance=0.2];
+hiramsmith -- microbial [label="N/A" distance=0.01];
+microbial -- slichter [label="Babcock Dr" distance=0.1];
+microbial -- steenbocklib [label="Babcock Dr" distance=0.04];
+microbial -- babcockhall [label="Babcock Dr" distance=0.05];
+microbial -- russelllabs [label="Babock Dr" distance=0.06];
+slichter -- tripp [label="Tripp Cir" distance=0.1];
+slichter -- adams [label="Tripp Cir" distance=0.08];
+slichter -- humphrey [label="Babcock Dr" distance=0.02];
+tripp -- adams [label="Tripp Cir" distance=0.03];
+adams -- humphrey [label="Tripp Cir" distance=0.04];
+humphrey -- jorns [label="N/A" distance=0.03];
+jorns -- leopold [label="N/A" distance=0.03];
+jorns -- kronshage [label="Kronshage Dr" distance=0.05];
+leopold -- cole [label="Elm Dr" distance=0.1];
+cole -- sullivan [label="Elm Dr" distance=0.03];
+cole -- colerec [label="N/A" distance=0.03];
+colerec -- animalscience [label="N/A" distance=0.05];
+sullivan -- bradley [label="Elm Dr" distance=0.06];
+sullivan -- colerec [label="N/A" distance=0.07];
+sullivan -- dejope [label="N/A" distance=0.06];
+bradley -- dejope [label="N/A" distance=0.09];
+dejope -- phillips [label="N/A" distance=0.04];
+dejope -- meatandanimal [label="Willow Dr" distance=0.09];
+dejope -- poultrylab [label="Willow Dr" distance=0.12];
+dejope -- fourlakes [label="N/A" distance=0.0];
+bakkerec -- biotronlab [label="Observatory Dr" distance=0.1];
+bakkerec -- meatandanimal [label="Observatory Dr" distance=0.1];
+babcockhall -- russelllabs [label="Linden Dr" distance=0.03];
+russelllabs -- steenbocklib [label="N/A" distance=0.07];
+russelllabs -- hansonbio [label="Linden Dr" distance=0.1];
+steenbocklib -- animalscience [label="Observatory Dr" distance=0.2];
+hansonbio -- animalscience [label="N/A" distance=0.01];
+animalscience -- agengineerlab [label="Linden" distance=0.12];
+agengineerlab -- livestocklab [label="N/A" distance=0.01];
+agengineerlab -- poultrylab [label="Observatory Dr" distance=0.1];
+poultrylab -- meatandanimal [label="Observatory Dr" distance=0.04];
+meatandanimal -- meatmicro [label="N/A" distance=0.0];
+meatmicro -- vetmedicine [label="N/A" distance=0.08];
+livestocklab -- dairycattle [label="Farm Pl" distance=0.07];
+dairycattle -- meatandmuscle [label="N/A" distance=0.01];
+carson -- slichter [label="N/A" distance=0.03];
+carson -- tripp [label="Tripp Cir" distance=0.04];
+carson -- adams [label="Tripp Cir" distance=0.03];
+liz -- waters [label="N/A" distance=0.0];
+
+
+// Seth (E of N Charter || S of U Ave)
+lowell -- redgym [label="Langdon St." distance=0.2];
+lowell -- lowellmarket [label="N/A" distance=0.0];
+lowell -- memlibrary [label="Langdon St." distance=0.2];
+redgym -- memlibrary [label="Langdon St." distance=0.02];
+redgym -- memunion [label="Langdon St." distance=0.06];
+helen -- memunion [label="Observatory Dr." distance=0.1];
+collegelibrary -- helen [label="N/A" distance=0.0];
+memunion -- science [label="N Park St." distance=0.1];
+helen -- radio [label="Observatory Dr." distance=0.04];
+science -- radio [label="Parking Lot 9" distance=0.02];
+radio -- education [label="Observatory Dr." distance=0.05];
+education -- north [label="Bascom Mall" distance=0.04];
+north -- south [label="Bascom Mall" distance=0.02];
+education -- law [label="Bascom Mall" distance=0.05];
+south -- law [label="Bascom Mall" distance=0.03];
+law -- music [label="Bascom Mall" distance=0.03];
+science -- music [label="N Park St." distance=0.1];
+north -- bascom [label="Bascom Mall" distance=0.06];
+south -- bascom [label="Bascom Mall" distance=0.06];
+south -- birge [label="Lincoln Dr." distance=0.03];
+birge -- vanvleck [label="Lincoln Dr." distance=0.04];
+vanvleck -- bascom [label="Lincoln Dr." distance=0.06];
+birge -- bascom [label="Lincoln Dr." distance=0.06];
+vanvleck -- sterling [label="N/A" distance=0.04];
+vanvleck -- ingraham [label="N/A" distance=0.07];
+bascom -- ingraham [label="N/A" distance=0.02];
+ingraham -- sewell [label="Observatory Dr." distance=0.04];
+music -- chadbourne [label="Lathrop Dr." distance=0.04];
+science -- humanities [label="N Park St." distance=0.15];
+humanities -- chadbourne [label="N Park St." distance=0.09];
+elvehjem -- memlibrary [label="Library Mall" distance=0.12];
+memlibrary -- unibookstore [label="State St." distance=0.02];
+humanities -- elvehjem [label="N/A" distance=0.03];
+elvehjem -- chazen [label="East Campus Mall" distance=0.03];
+chazen -- memlibrary [label="Library Mall" distance=0.1];
+chadbourne -- barnard [label="University Ave." distance=0.02];
+barnard -- lathrop [label="University Ave." distance=0.08];
+lathrop -- chamberlin [label="University Ave." distance=0.13];
+lathrop -- birge [label="Lincoln Dr." distance=0.04];
+barnard -- law [label="Lathrop Dr." distance=0.04];
+lathrop -- law [label="Lathrop Dr." distance=0.05];
+chamberlin -- sterling [label="N Charter St." distance=0.06];
+sterling -- ingraham [label="N Charter St." distance=0.05];
+humanities -- vilas [label="N Park St." distance=0.11];
+vilas -- ecampmall333 [label="East Campus Mall" distance=0.03];
+chazen -- ecampmall333 [label="East Campus Mall" distance=0.08];
+elvehjem -- ecampmall333 [label="East Campus Mall" distance=0.09];
+vilas -- grainger [label="N Park St." distance=0.05];
+chadbourne -- grainger [label="N Park St." distance=0.04];
+barnard -- grainger [label="University Ave." distance=0.03];
+chemistry -- grainger [label="University Ave." distance=0.13];
+lathrop -- chemistry [label="University Ave." distance=0.1];
+chamberlin -- chemistry [label="University Ave." distance=0.08];
+vilas -- sellery [label="W Johnson St." distance=0.06];
+sellery -- gordon [label="East Campus Mall" distance=0.04];
+ecampmall333 -- gordon [label="East Campus Mall" distance=0.09];
+sellery -- davis [label="W Johnson St." distance=0.06];
+grainger -- davis [label="W Johnson St." distance=0.06];
+gordon -- witte [label="W Johnson St." distance=0.06];
+witte -- ecampmall333 [label="W Johnson St." distance=0.14];
+sellery -- ogg [label="N Park St." distance=0.04];
+ogg -- smith [label="N Park St." distance=0.14];
+gordon -- nicreccenter [label="East Campus Mall" distance=0.05];
+nicreccenter -- kohlcenter [label="W Dayton St." distance=0.14];
+grainger -- educationalsciences [label="W Johnson St." distance=0.06];
+merit -- ogg [label="N Park St." distance=0.05];
+chemistry -- educationalsciences [label="N Mills St." distance=0.07];
+educationalsciences -- teachereducation [label="N Mills St." distance=0.05];
+educationalsciences -- integrativebioresearch [label="W Johsnon St." distance=0.07];
+educationalsciences -- noland [label="N Mills St." distance=0.05];
+teachereducation -- noland [label="N Mills St." distance=0.06];
+psychology -- chemistry [label="N Charter St." distance=0.04];
+psychology -- cs [label="W Johnson St." distance=0.12];
+cs -- atmospheric [label="N Orchard St." distance=0.06];
+cs -- teachereducation [label="W Dayton St." distance=0.15];
+unionsouth -- cs [label="N Orchard St." distance=0.03];
+psychology -- discovery [label="W Johnson St." distance=0.1];
+discovery -- unionsouth [label="N Orchard St." distance=0.07];
+atmospheric -- weeks [label="W Dayton St." distance=0.03];
+chemistry -- integrativebioresearch [label="W Johnson St." distance=0.7];
+unionsouth -- engineering [label="N Randall Ave." distance=0.07];
+weeks -- cs [label="N Charter St." distance=0.08];
+engineering -- materialscience [label="Engineering Dr." distance=0.1];
+materialscience -- mechanical [label="University Ave." distance=0.06];
+mechanical -- engineeringcenters [label="Engineering Dr." distance=0.01];
+engineering -- camprandall [label="Camp Randall Memorial Park & Monroe St." distance=0.3];
+engineering -- mechanical [label="Engineering Dr." distance=0.1];
+chamberlin -- medicalsciences [label="N Charter St." distance=0.04];
+chamberlin -- servicemem [label="N Charter St." distance=0.05];
+sterling -- servicemem [label="N Charter St." distance=0.04];
+waters -- sewell [label="Observatory Dr." distance=0.12];
+ingraham -- vanhise [label="N Charter St." distance=0.06];
+sewell -- vanhise [label="N Charter St." distance=0.1];
+}

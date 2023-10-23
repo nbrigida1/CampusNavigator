@@ -1,0 +1,32 @@
+graph MainCampus {
+humanities [label="Humanities Building" address="455 N Park St"];
+chadbourne [label="Chadbourne" address="420 N Park St"];
+grainger [label="Grainger Hall" address="975 University Ave"];
+mLibrary [label="Memorial Library" address="728 State St"];
+memUnion [label="Memorial Union" address="800 Langdon St"];
+lathrop [label="Lathrop Hall" address="1050 University Ave"];
+chemistry [label="Chemistry Building" address="W Johnson St"];
+chamberlin [label="Chamberlin Hall" address="1150 University Ave"];
+psychology [label="Psychology Building" address="1202 W Johnson St"];
+discovery [label="Discovery Building" address="330 N Orchard St"];
+sellery [label="Sellery Residence Hall" address="821 W Johnson St"];
+cLibrary [label="College Library" address="600 N Park St"];
+education [label="School of Education" address="1000 Bascom Mall"];
+bascom [label="Bascom Hall" address="500 Lincoln Dr"];
+sewell [label="Social Sciences Building" address="1180 Observatory Dr"];
+
+discovery -- psychology [label="" distance=0.1];
+psychology -- chamberlin [label="" distance=0.03];
+chamberlin -- chemistry [label="" distance=0.03];
+chemistry -- lathrop [label="" distance=0.08];
+lathrop -- grainger [label="" distance=0.06];
+grainger -- chadbourne [label="" distance=0.04];
+chadbourne -- sellery [label="" distance=0.1];
+chadbourne -- humanities [label="" distance=0.1];
+humanities -- mLibrary [label="" distance=0.1];
+humanities -- memUnion [label="" distance=0.1];
+humanities -- cLibrary [label="" distance=0.1];
+cLibrary -- education [label="" distance=0.03];
+education -- bascom [label="" distance=0.2];
+bascom -- sewell [label="" distance=0.05];
+}
